@@ -426,6 +426,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  margin-top: 2rem;
 }
 
 .products .product-icons a {
@@ -472,23 +473,28 @@ body {
   font-weight: bold;
 }
 
-/* Contact Section */
+
 .contact .row {
   display: flex;
   margin-top: 2rem;
   background-color: #222;
+  border-radius: 8px;
+  overflow: hidden; 
 }
 
 .contact .row .map {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
+  border-radius: 8px 0 0 8px;
 }
 
 .contact .row form {
   flex: 1 1 45rem;
-  padding: 5rem 2rem;
+  padding: 4rem 3rem;
   text-align: center;
+  background-color: #333; 
+  border-radius: 0 8px 8px 0; 
 }
 
 .contact .row form .input-group {
@@ -496,35 +502,58 @@ body {
   align-items: center;
   margin-top: 2rem;
   background-color: var(--bg);
-  border: 1px solid #eee;
-  padding-left: 2rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding-left: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .contact .row form .input-group input {
   width: 100%;
-  padding: 2rem;
-  font-size: 1.7rem;
+  padding: 1rem;
+  font-size: 1.6rem; 
   background: none;
   color: #fff;
+  border: none; 
+  border-radius: 8px; 
+}
+
+.contact .row form .input-group input:focus {
+  outline: none;
+  border: 1px solid var(--primary); 
+  box-shadow: 0 0 6px var(--primary); 
 }
 
 .contact .row form .btn {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: inline-block;
   padding: 1rem 3rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: #fff;
   background-color: var(--primary);
+  border: none; 
+  border-radius: 8px; 
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
+
+.contact .row form .btn:hover {
+  background-color: var(--primary-dark); 
+  transform: scale(1.05); 
+}
+
+.contact .row form .btn:active {
+  transform: scale(0.95); 
+}
+
 
 /* Footer */
 footer {
-  background-color: rgba(1, 1, 1, 0.8); /* Menyamakan dengan navbar */
+  background-color: rgba(1, 1, 1, 0.8); 
   text-align: center;
   padding: 1rem 0 3rem;
   margin-top: 3rem;
-  border-top: 1px solid #513c28; /* Jika Anda ingin border seperti navbar */
+  border-top: 1px solid #513c28;
 }
 
 footer .socials {
