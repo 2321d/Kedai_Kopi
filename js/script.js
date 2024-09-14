@@ -70,6 +70,6 @@ function kirimPesan(event) {
   const email = document.getElementById('email').value;
   const noHp = document.getElementById('noHp').value;
   const pesan = document.getElementById('pesan').value;
-  const url = "https://web.whatsapp.com/send?phone=6281529463925&text=Hallo%20Admin%2C%0ANama%20%3A%20*" + encodeURIComponent(nama) + "*%0AEmail%20%3A%20*" + encodeURIComponent(email) + "*%0ANomer%20%3A%20*" + encodeURIComponent(noHp) + "*%0A%0A*"+ encodeURIComponent(pesan) +"*";
+  const url = "https://api.whatsapp.com/send?phone=6281529463925&text=Hallo%20Admin%2C%0ANama%20%3A%20*" + encodeURIComponent(nama) + "*%0AEmail%20%3A%20*" + encodeURIComponent(email) + "*%0ANomer%20%3A%20*" + encodeURIComponent(noHp) + "*%0A%0A*"+ encodeURIComponent(pesan) +"*";
   window.open(url, '_blank');
 }
